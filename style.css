@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    display: flex;
+    top: 0;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column ;
+    padding: 40px;
+    padding-top: 50px;
+    border-radius: 26px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game h1 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 750;
+}
+
+#Restart {
+    display: flex;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 10px 195px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    margin: 150px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0 2px 2.5px rgba(0, 0, 0, 0.3);
+    transition: all 0.45s ease;
+}
+
+#Restart:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    scale: 1.05;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.number-button {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 0 2px 2.5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    transition: all 0.35s ease;
+}
+
+.number-button:hover {
+    scale: 1.06;
+}
+
+.number-button:active {
+    scale: 1.00;
+}
+
+.number-button.disabled-btn {
+    background: #ccc;
+    color: #777;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.6;
+    transition: all 0.35s ease;
+    box-shadow: 10 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.guesses-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.hint-text {
+    text-align: center;
+    font-size: 15px;}
+
+.victory-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.victory {
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: -10px;
+}
